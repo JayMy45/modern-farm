@@ -2,8 +2,8 @@
 //function should return an object with type, height, and output values.
 //function needs three parameters representing the properties above
 
-export const createAsparagus = (typeValue, heightValue, outputValue) => {
-    let asparagusObject = { type: typeValue, height: heightValue, output: outputValue, }
+export const createAsparagus = () => {
+    let asparagusObject = { type: 'Asparagus', height: 24, output: 4 }
 
     return asparagusObject
 }

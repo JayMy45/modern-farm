@@ -2,8 +2,8 @@
 ///function should return an array with two objects contain same values (type, height, and output)
 //function needs three parameters representing the properties above
 
-export const createCorn = (typeValue, heightValue, outputValue) => {
-    let cornArray = [{ type: typeValue, height: heightValue, output: outputValue, }, { type: typeValue, height: heightValue, output: outputValue, }]
+export const createCorn = () => {
+    let cornArray = [{ type: "Corn", height: 180, output: 6 }, { type: "Corn", height: 180, output: 6 }]
 
     return cornArray
 }
