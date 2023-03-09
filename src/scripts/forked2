@@ -1,0 +1,45 @@
+/*Code let's all right what's up it's gonna work is one person is going to one person is going to code and everyone else is gonna help hoda teacher by future ever just gonna switch off so the next person will take over and we'll just do that it'll be that was when I had everyone Time right so when we have Adam do the first function functionality show go to the pizza party list of the first they were supposed to do is read a function for adding the toppings to the pizza everyone's in right who soon urban this shit is over around/* 
+  The owners of Joey's Pizza want your team to develop some software
+  that allows employees to build customer pizzas with 2 toppings, at the
+  right size, get it paid for, bake it, and then output a message that
+  it is being delivered.
+
+  The delivery message should only happen if the pizza has been paid for.
+
+
+ what kind of toppings
+
+  Goals of the pizza project:
+  ---------------------------
+    1. Function for adding the toppings to the pizza
+    2. Function that bakes a pizza
+    3. Function that adds `size` property to pizza
+    4. Function to mark the pizza as being paid.
+    5. Function that logs a "Your {pizza details} is being delivered".
+          If pizza is not paid for yet, display "Please pay us first"
+    6. Each function copies the input object and returns
+          modified copy
+*/
+// function for adding the toppings to the pizza
+const addToppings = (toppingOne, toppingTwo) => {
+  // declare variable to store pizza with toppings
+  let pizza = {};
+  // add toppings to pizza
+  pizza.toppings = [toppingOne, toppingTwo];
+  return pizza; //return the array of pizza toppings
+};
+const pizza = addToppings("pepperoni", "anchovies");
+
+// function baking the pizza
+const bakePizza = (pizza) => {
+  if (pizza.toppings.length) {
+    pizza.baked = true;
+  }
+};
+bakePizza(pizza);
+console.log(pizza);
+// function that adds 'size' property pics of infected third Nokia OK well let's him after we let's call that add toppings function and then consul Lagas results that we can see what it does
+
+// function to mark the pizza as being paid
+
+//

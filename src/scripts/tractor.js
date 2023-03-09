@@ -6,7 +6,7 @@ import { createPotato } from "./seeds/potato.js"    //creates a object/seed
 import { createSoybean } from "./seeds/soybean.js"  //creates a object/seed
 import { createSunflower } from "./seeds/Sunflower.js"  //creates a object/seed
 import { createWheat } from "./seeds/Wheat.js"  //creates a object/seed
-import { usePlantsArray } from './field.js';  //plants array from field.js
+import { usePlants } from './field.js';  //plants array from field.js
 
 //invoke imported functions and store in variable.
 const asparagusSeed = createAsparagus()
@@ -33,6 +33,7 @@ export const plantSeeds = (plantPlanArray) => {
             if (plan === "Asparagus") {
                 addPlant(asparagusSeed)  //used function, addPlant, with seedObject as parameter.  This creates a object...refer field.js module for details
             } else if (plan === "Corn") {
+                console.log(plan)
                 addPlant(cornSeed)
             } else if (plan === "Potato") {
                 addPlant(potatoSeed)
@@ -47,7 +48,7 @@ export const plantSeeds = (plantPlanArray) => {
     }
     //return invoked usePlantsArray?????? 
     //Why didn't me invoking it upon importing and then returning the variable work???
-    return usePlantsArray();
+    return usePlants();
     //this function exports plantArray on field.js module...
 }
 

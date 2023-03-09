@@ -7,7 +7,6 @@ Do not export the array.
 4. Define and export a function named usePlants that returns a copy of the array of plants.
 ****Be aware that when planting corn, an array of objects will be provided instead of a single object like all the other type of seeds. Investigate the Array.isArray method to check if corn got passed in, or one of the others.
 */
-import { plantSeeds } from './tractor.js'
 
 // import { yearlyArray } from './tractor.js'
 // let yearsPlantPlan = yearlyArray()
@@ -18,14 +17,20 @@ let plantArray = []
 //declare & export function addPlant that will take an object as a parameter/input.
 
 export const addPlant = (seedObject) => {
-    plantArray.push(seedObject);
 
+    if (Array.isArray(seedObject)) {
+        for (let item of seedObject) {
+            plantArray.push(item)
+        }
+    } else {
+        plantArray.push(seedObject)
+    }
     return seedObject
 }
 
 //declare & export function named usePlants
 //return copy of array
 //use .map() method to export array 
-export const usePlantsArray = () => {
+export const usePlants = () => {
     return plantArray.map(plantArray => ({ ...plantArray }))
 }

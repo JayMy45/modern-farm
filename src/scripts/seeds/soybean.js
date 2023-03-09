@@ -7,3 +7,5 @@ export const createSoybean = () => {
 
     return soybeanObject
 }
+
+// console.log(createSoybean)

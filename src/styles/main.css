@@ -7,15 +7,20 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+    color: #404040;
+    font-family: "Comfortaa", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Patua One", serif;
+    letter-spacing: 2px;
 }
 
 .blue {
@@ -34,3 +39,19 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.mf__harvest {
+    /* border: 1px solid black; */
+    width: 3.3rem;
+    margin: 2rem;
+    text-align: center;
+    /* padding: 1rem; */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    background-color: yellow;
+    text-align: center;
+    padding: 2rem;
+}
