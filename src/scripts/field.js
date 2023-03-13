@@ -25,7 +25,6 @@ export const addPlant = (seedObject) => {
     } else {
         plantArray.push(seedObject)
     }
-    return seedObject
 }
 
 //declare & export function named usePlants

@@ -3,7 +3,7 @@
 //function needs three parameters representing the properties above
 
 export const createCorn = () => {
-    let cornArray = [
+    const cornArray = [
         { type: "Corn", height: 180, output: 6 },
         { type: "Corn", height: 180, output: 6 }
     ]
