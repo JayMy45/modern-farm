@@ -47,15 +47,15 @@ const harvestPlantArray = []
 // }
 
 
+const harvestedSeeds = [];
 
 export const harvestPlants = (planting) => {
-    const harvestedSeeds = [];
 
     for (const plant of planting) {
         // console.log(plant)
         if (plant.type === 'Corn') {
-            for (let i = 0; i < plant.output; i++) {
-                plant.output = plant.output / 2
+            for (let i = 0; i < plant.output / 2; i++) {
+                // plant.output = plant.output / 2
                 harvestedSeeds.push(plant);
             }
         } else {

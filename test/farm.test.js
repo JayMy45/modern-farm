@@ -1,13 +1,13 @@
-import { createPlan } from "../src/scripts/plan.js"
 import { plantSeeds } from "../src/scripts/tractor.js";
 import { usePlants } from "../src/scripts/field.js";
-import { createCorn } from "../src/scripts/seeds/corn.js";
+import { createCorn } from "../src/scripts/seeds/Corn.js";
 import { createPotato } from "../src/scripts/seeds/potato.js";
-import { createWheat } from "../src/scripts/seeds/wheat.js";
-import { createSunflower } from "../src/scripts/seeds/sunflower.js";
+import { createSunflower } from "../src/scripts/seeds/Sunflower.js";
 import { createSoybean } from "../src/scripts/seeds/soybean.js";
-import { createAsparagus } from "../src/scripts/seeds/asparagus.js";
+import { createAsparagus } from "../src/scripts/seeds/Asparagus.js";
 import { harvestPlants } from "../src/scripts/harvester.js";
+import { createWheat } from "../src/scripts/seeds/Wheat.js";
+
 
 const plan = [
     ["Corn", "Potato"],

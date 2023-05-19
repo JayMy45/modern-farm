@@ -31,5 +31,5 @@ export const addPlant = (seedObject) => {
 //return copy of array
 //use .map() method to export array 
 export const usePlants = () => {
-    return plantArray.map(plantArray => ({ ...plantArray }))
+    return plantArray
 }

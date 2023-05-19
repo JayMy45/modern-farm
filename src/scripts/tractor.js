@@ -1,12 +1,11 @@
 //import needed functions...
-import { addPlant } from "./field.js" //this functions pushes seedObjects to array (plantArray on field.js module)
+import { addPlant, usePlants } from "./field.js" //this functions pushes seedObjects to array (plantArray on field.js module)
 import { createAsparagus } from "./seeds/Asparagus.js" //creates a object/seed
 import { createCorn } from "./seeds/Corn.js"        //creates a object/seed
 import { createPotato } from "./seeds/potato.js"    //creates a object/seed
 import { createSoybean } from "./seeds/soybean.js"  //creates a object/seed
 import { createSunflower } from "./seeds/Sunflower.js"  //creates a object/seed
 import { createWheat } from "./seeds/Wheat.js"  //creates a object/seed
-import { usePlants } from './field.js';  //plants array from field.js
 
 //invoke imported functions and store in variable.
 const asparagusSeed = createAsparagus()
